@@ -1,0 +1,144 @@
+
+# FINAL PROJECT REPORT
+
+Project Title:
+Cryptocurrency Volatility Prediction using Machine Learning
+
+------------------------------------------------------------
+
+1. Introduction
+
+Cryptocurrency markets are highly volatile, making price prediction and risk analysis important for investors and traders. This project focuses on predicting cryptocurrency volatility using machine learning techniques based on historical market data.
+
+------------------------------------------------------------
+
+2. Objective
+
+The main objective of this project is to build a machine learning model that predicts cryptocurrency volatility using historical OHLC prices, trading volume, and market capitalization.
+
+------------------------------------------------------------
+
+3. Dataset Description
+
+The dataset contains historical cryptocurrency information including:
+
+• Open Price
+• High Price
+• Low Price
+• Close Price
+• Trading Volume
+• Market Capitalization
+• Cryptocurrency Name
+• Date
+
+------------------------------------------------------------
+
+4. Data Preprocessing
+
+The following preprocessing steps were performed:
+
+• Removed missing values
+• Removed duplicate records
+• Converted date into datetime format
+• Checked data consistency
+• Scaled numerical features
+
+------------------------------------------------------------
+
+5. Exploratory Data Analysis
+
+EDA was performed to understand the dataset.
+
+The following visualizations were used:
+
+• Histograms
+• Correlation Heatmap
+• Price Trend Graph
+• Boxplots
+• Distribution Plots
+
+The analysis helped identify relationships between variables and detect outliers.
+
+------------------------------------------------------------
+
+6. Feature Engineering
+
+Several new features were generated, including:
+
+• Daily Return
+• High-Low Difference
+• Moving Average (7 Days)
+• Moving Average (30 Days)
+• Rolling Volatility
+• Liquidity Ratio
+• Price Range
+• Bollinger Bands
+• Exponential Moving Average (EMA)
+• Relative Strength Index (RSI)
+
+------------------------------------------------------------
+
+7. Machine Learning Model
+
+Algorithm Used:
+
+Random Forest Regressor
+
+The dataset was divided into training and testing sets.
+
+Training Data : 80%
+
+Testing Data : 20%
+
+------------------------------------------------------------
+
+8. Model Evaluation
+
+The model was evaluated using:
+
+• Mean Absolute Error (MAE)
+• Root Mean Squared Error (RMSE)
+• R² Score
+
+These metrics measured prediction accuracy and overall model performance.
+
+------------------------------------------------------------
+
+9. Deployment
+
+The trained model was deployed locally using a Streamlit application.
+
+The application allows users to enter cryptocurrency information and obtain predicted volatility.
+
+------------------------------------------------------------
+
+10. Results
+
+The trained model successfully predicts cryptocurrency volatility using historical market information.
+
+The generated features improved the model's predictive performance.
+
+------------------------------------------------------------
+
+11. Conclusion
+
+This project demonstrates how machine learning can be applied to financial datasets for volatility prediction.
+
+The developed system performs data preprocessing, feature engineering, model training, evaluation, and deployment in a structured pipeline.
+
+------------------------------------------------------------
+
+12. Future Scope
+
+Future improvements may include:
+
+• Deep Learning models such as LSTM or GRU
+• Real-time cryptocurrency API integration
+• Cloud deployment
+• Advanced technical indicators
+• Improved hyperparameter tuning
+
+------------------------------------------------------------
+
+End of Report
+

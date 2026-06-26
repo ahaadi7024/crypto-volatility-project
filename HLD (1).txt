@@ -1,0 +1,86 @@
+
+# HIGH LEVEL DESIGN (HLD)
+
+## Project Title
+Cryptocurrency Volatility Prediction using Machine Learning
+
+## Overview
+
+The objective of this project is to predict cryptocurrency volatility using historical market data such as Open, High, Low, Close (OHLC) prices, trading volume, and market capitalization. The system preprocesses the data, creates additional features, trains a machine learning model, evaluates its performance, and provides predictions through a simple Streamlit application.
+
+## System Components
+
+1. Data Collection
+   - Load historical cryptocurrency dataset.
+
+2. Data Preprocessing
+   - Handle missing values.
+   - Remove duplicate records.
+   - Convert date column.
+   - Scale numerical features.
+
+3. Feature Engineering
+   - Daily Return
+   - High-Low Difference
+   - Moving Averages
+   - Rolling Volatility
+   - Liquidity Ratio
+   - Bollinger Bands
+   - RSI
+
+4. Exploratory Data Analysis (EDA)
+   - Summary statistics
+   - Distribution plots
+   - Correlation heatmap
+   - Trend analysis
+
+5. Model Training
+   - Split dataset into training and testing sets.
+   - Train Random Forest Regressor.
+
+6. Model Evaluation
+   - RMSE
+   - MAE
+   - R² Score
+
+7. Model Saving
+   - Save trained model using Joblib.
+
+8. Deployment
+   - Predict volatility using a Streamlit web application.
+
+## High-Level Architecture
+
+           Historical Dataset
+                    |
+                    V
+          Data Preprocessing
+                    |
+                    V
+          Feature Engineering
+                    |
+                    V
+                  EDA
+                    |
+                    V
+           Train/Test Split
+                    |
+                    V
+      Random Forest Regressor
+                    |
+                    V
+          Model Evaluation
+                    |
+                    V
+        Save Model (model.pkl)
+                    |
+                    V
+        Streamlit Web Application
+
+## Advantages
+
+- Simple and easy to understand.
+- Handles historical cryptocurrency data efficiently.
+- Can be extended with deep learning models in the future.
+- Provides quick predictions through a web interface.
+

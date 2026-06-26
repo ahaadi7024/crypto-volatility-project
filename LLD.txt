@@ -1,0 +1,137 @@
+
+# LOW LEVEL DESIGN (LLD)
+
+## Project Title
+Cryptocurrency Volatility Prediction using Machine Learning
+
+## Module 1: Data Loading
+Purpose:
+- Read the cryptocurrency dataset from a CSV file.
+- Display dataset information.
+
+Input:
+- crypto.csv
+
+Output:
+- Raw dataset loaded into a Pandas DataFrame.
+
+--------------------------------------------------
+
+## Module 2: Data Preprocessing
+
+Purpose:
+- Handle missing values.
+- Remove duplicate rows.
+- Convert the Date column into datetime format.
+- Sort the dataset by Date.
+
+Input:
+- Raw dataset
+
+Output:
+- Cleaned dataset
+
+--------------------------------------------------
+
+## Module 3: Feature Engineering
+
+Purpose:
+Generate additional features that improve prediction accuracy.
+
+Features Created:
+- Daily Return
+- High-Low Difference
+- Moving Average (7 Days)
+- Moving Average (30 Days)
+- Rolling Standard Deviation
+- Liquidity Ratio
+- Price Range
+- Bollinger Bands
+- EMA
+- RSI
+
+Output:
+- Enhanced dataset
+
+--------------------------------------------------
+
+## Module 4: Feature Scaling
+
+Purpose:
+Standardize numerical features using StandardScaler.
+
+Input:
+- Engineered features
+
+Output:
+- Scaled features
+
+--------------------------------------------------
+
+## Module 5: Model Training
+
+Algorithm:
+Random Forest Regressor
+
+Steps:
+- Split dataset into training and testing sets.
+- Train the model using training data.
+
+Output:
+- Trained model
+
+--------------------------------------------------
+
+## Module 6: Model Evaluation
+
+Metrics Used:
+- RMSE
+- MAE
+- R² Score
+
+Purpose:
+Evaluate the prediction performance.
+
+--------------------------------------------------
+
+## Module 7: Model Saving
+
+Files Generated:
+- model.pkl
+- scaler.pkl
+
+Purpose:
+Store the trained model and scaler for future predictions.
+
+--------------------------------------------------
+
+## Module 8: Deployment
+
+Technology:
+Streamlit
+
+Purpose:
+Allow users to enter cryptocurrency details and predict market volatility through a simple web interface.
+
+--------------------------------------------------
+
+## Overall Workflow
+
+Load Dataset
+      ↓
+Data Cleaning
+      ↓
+Feature Engineering
+      ↓
+Feature Scaling
+      ↓
+Train/Test Split
+      ↓
+Random Forest Model
+      ↓
+Performance Evaluation
+      ↓
+Save Model
+      ↓
+Streamlit Prediction
+

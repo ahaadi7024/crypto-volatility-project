@@ -1,0 +1,96 @@
+
+# EXPLORATORY DATA ANALYSIS (EDA) REPORT
+
+Project Title:
+Cryptocurrency Volatility Prediction using Machine Learning
+
+------------------------------------------------------------
+
+1. Dataset Overview
+
+The dataset contains historical cryptocurrency market information including:
+
+• Open Price
+• High Price
+• Low Price
+• Close Price
+• Volume
+• Market Capitalization
+• Cryptocurrency Name
+• Date
+
+The data was loaded using Pandas for further preprocessing and analysis.
+
+------------------------------------------------------------
+
+2. Data Cleaning
+
+The following preprocessing steps were performed:
+
+• Removed missing values
+• Removed duplicate records
+• Converted date column into datetime format
+• Checked data types
+• Prepared numerical columns for model training
+
+------------------------------------------------------------
+
+3. Summary Statistics
+
+Summary statistics such as mean, median, standard deviation, minimum and maximum values were generated using the describe() function.
+
+These statistics helped understand the distribution of the dataset.
+
+------------------------------------------------------------
+
+4. Visualizations
+
+The following plots were created:
+
+• Histogram of numerical features
+• Correlation Heatmap
+• Closing Price Trend
+• Volume Distribution
+• Boxplots for Outlier Detection
+
+------------------------------------------------------------
+
+5. Correlation Analysis
+
+A correlation matrix was generated to understand relationships between variables.
+
+Highly correlated features were identified before model training.
+
+------------------------------------------------------------
+
+6. Feature Engineering
+
+New features were created to improve prediction performance.
+
+Examples include:
+
+• Daily Return
+• High-Low Difference
+• Rolling Mean
+• Rolling Volatility
+• Liquidity Ratio
+• Price Range
+• Bollinger Bands
+• EMA
+• RSI
+
+------------------------------------------------------------
+
+7. Observations
+
+• Cryptocurrency prices show high volatility.
+• Trading volume varies significantly across different dates.
+• Some features show strong positive correlation.
+• Feature engineering improved the quality of input data.
+
+------------------------------------------------------------
+
+8. Conclusion
+
+The dataset was successfully cleaned, explored, and transformed into a suitable format for machine learning. The generated features helped improve the predictive capability of the model.
+
